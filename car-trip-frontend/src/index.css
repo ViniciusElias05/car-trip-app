@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.driver-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 300px;
+  position: relative;
+}
+
+.rating {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-icon {
+  font-size: 1rem;
+  font-weight:500;
+  cursor: pointer;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  bottom: 125%; /* Ajuste conforme necessário */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 14px;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rating:hover .tooltip {
+  display: block;
+}
